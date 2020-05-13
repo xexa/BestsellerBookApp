@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/container_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/detail_book_image"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/kite_runner"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/detail_book_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/the_kite_runner"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/detail_book_image"
+            app:layout_constraintTop_toTopOf="@+id/imageview" />
+
+        <TextView
+            android:id="@+id/detail_book_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/by_khaled_hosseini"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/detail_book_image"
+            app:layout_constraintTop_toBottomOf="@id/detail_book_title" />
+
+        <TextView
+            android:id="@+id/detail_rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/rank"
+            app:layout_constraintStart_toEndOf="@id/detail_book_image"
+            app:layout_constraintTop_toBottomOf="@id/detail_book_author" />
+
+        <TextView
+            android:id="@+id/detail_rank_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/_1"
+            app:layout_constraintStart_toEndOf="@id/detail_rank"
+            app:layout_constraintTop_toBottomOf="@id/detail_book_author" />
+
+        <TextView
+            android:id="@+id/detail_isbn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/isbn"
+            app:layout_constraintStart_toEndOf="@id/detail_book_image"
+            app:layout_constraintTop_toBottomOf="@id/detail_rank" />
+
+        <TextView
+            android:id="@+id/detail_isbn_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/_9789146219354"
+            app:layout_constraintStart_toEndOf="@id/detail_isbn"
+            app:layout_constraintTop_toBottomOf="@id/detail_rank_display" />
+
+        <TextView
+            android:id="@+id/detail_publisher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="@string/publisher"
+            app:layout_constraintStart_toEndOf="@id/detail_book_image"
+            app:layout_constraintTop_toBottomOf="@id/detail_isbn" />
+
+        <TextView
+            android:id="@+id/detail_publisher_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="@string/riverhead_books"
+            app:layout_constraintStart_toEndOf="@id/detail_publisher"
+            app:layout_constraintTop_toBottomOf="@id/detail_isbn_display" />
+
+        <TextView
+            android:id="@+id/rank_last_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:paddingBottom="8dp"
+            android:text="@string/rank_last_week"
+            app:layout_constraintStart_toEndOf="@id/detail_book_image"
+            app:layout_constraintTop_toBottomOf="@id/detail_publisher" />
+
+        <TextView
+            android:id="@+id/rank_last_week_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:paddingBottom="8dp"
+            android:text="@string/_14"
+            app:layout_constraintStart_toEndOf="@id/rank_last_week"
+            app:layout_constraintTop_toBottomOf="@id/detail_publisher_display" />
+
+        <TextView
+            android:id="@+id/weeks_on_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:paddingBottom="8dp"
+            android:text="@string/weeks_on_list"
+            app:layout_constraintStart_toEndOf="@id/detail_book_image"
+            app:layout_constraintTop_toBottomOf="@id/rank_last_week" />
+
+        <TextView
+            android:id="@+id/weeks_on_list_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:paddingBottom="8dp"
+            android:text="@string/_14"
+            app:layout_constraintStart_toEndOf="@id/weeks_on_list"
+            app:layout_constraintTop_toBottomOf="@id/rank_last_week_display" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:text="@string/description"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/detail_book_description"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:text="@string/description"
+            android:textSize="22sp"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                android:text="Buy on Amazon"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/buy_button"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:background="@drawable/ic_shop_foreground"
+                android:backgroundTintMode="multiply" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
+
+

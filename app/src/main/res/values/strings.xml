@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">BooksKursFinalApp</string>
+    <string name="the_kite_runner">The Kite Runner</string>
+    <string name="by_khaled_hosseini">By Khaled Hosseini</string>
+    <string name="rank">Rank</string>
+    <string name="_1">1</string>
+    <string name="isbn">ISBN:</string>
+    <string name="_9789146219354">9789146219354</string>
+    <string name="publisher">Publisher:</string>
+    <string name="riverhead_books">Riverhead Books</string>
+    <string name="description">Book Description</string>
+    <string name="search">Search</string>
+    <string name="rank_last_week">Rank last week:</string>
+    <string name="_14">14</string>
+    <string name="copyright">Copyright</string>
+    <string name="weeks_on_list">Weeks on list:</string>
+    <string name="bookapp">Book App</string>
+</resources>
