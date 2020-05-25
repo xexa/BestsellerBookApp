@@ -1,4 +1,4 @@
-package com.example.bookskursfinalapp;
+package com.example.bookskursfinalapp.view;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.bookskursfinalapp.R;
 import com.squareup.picasso.Picasso;
 
 public class DetailActivity extends AppCompatActivity {

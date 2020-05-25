@@ -1,5 +1,5 @@
 
-package com.example.bookskursfinalapp;
+package com.example.bookskursfinalapp.model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

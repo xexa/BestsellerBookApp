@@ -1,9 +1,11 @@
-package com.example.bookskursfinalapp;
+package com.example.bookskursfinalapp.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+
+import com.example.bookskursfinalapp.R;
 
 import static java.lang.Thread.sleep;
 
@@ -19,7 +21,7 @@ public class SplashScreen extends AppCompatActivity {
             public void run() {
                 try {
                     sleep(1500);
-                    Intent intent = new Intent(SplashScreen.this,MainActivity.class);
+                    Intent intent = new Intent(SplashScreen.this, MainActivity.class);
                     startActivity(intent);
                     finish();
                 }catch (Exception e){

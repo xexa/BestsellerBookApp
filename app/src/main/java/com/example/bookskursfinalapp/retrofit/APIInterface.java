@@ -1,4 +1,6 @@
-package com.example.bookskursfinalapp;
+package com.example.bookskursfinalapp.retrofit;
+
+import com.example.bookskursfinalapp.model.BooksApiResponse;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

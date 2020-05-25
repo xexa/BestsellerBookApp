@@ -1,13 +1,8 @@
 
-package com.example.bookskursfinalapp;
-
-import androidx.annotation.NonNull;
+package com.example.bookskursfinalapp.model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
-
-import java.util.ArrayList;
-import java.util.stream.Stream;
 
 public class BooksApiResponse {
 

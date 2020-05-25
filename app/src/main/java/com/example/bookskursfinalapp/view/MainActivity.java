@@ -1,4 +1,4 @@
-package com.example.bookskursfinalapp;
+package com.example.bookskursfinalapp.view;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,9 +14,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.bookskursfinalapp.R;
+import com.example.bookskursfinalapp.adapter.BookAdapter;
+import com.example.bookskursfinalapp.model.Book;
+import com.example.bookskursfinalapp.model.BooksApiResponse;
+import com.example.bookskursfinalapp.retrofit.APIInterface;
+
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 import okhttp3.OkHttpClient;
 import retrofit2.Call;
